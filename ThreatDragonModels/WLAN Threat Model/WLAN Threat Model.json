@@ -1,0 +1,18 @@
+{
+  "version": "2.6.2",
+  "release_version": "",
+  "released_at": "",
+  "summary": {
+    "title": "WLAN Threat Model",
+    "owner": "Wendy Obiri",
+    "description": "Home WLAN with client devices, a Wi-Fi interface, a router and an internet connection.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [],
+    "diagramTop": 0,
+    "reviewer": "",
+    "threatTop": 0
+  }
+}
