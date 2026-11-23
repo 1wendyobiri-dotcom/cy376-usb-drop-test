@@ -22,7 +22,7 @@
           {
             "position": {
               "x": 11.249999999999574,
-              "y": 60.000000000000284
+              "y": 40.000000000000284
             },
             "size": {
               "width": 170,
@@ -35,15 +35,17 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "b59c9918-e7a2-4487-bf5a-da7aef465e79",
             "zIndex": -1,
+            "id": "b59c9918-e7a2-4487-bf5a-da7aef465e79",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Wireless link(untrusted)",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
-              "crossingFlows": [],
+              "crossingFlows": [
+                "7730934d-b79e-467c-af8f-fcda8af07014"
+              ],
               "containedElements": [
                 "1ab92f1f-a8ae-40ca-9bf8-927f862fc878",
                 "df3352fa-10ee-46c9-ba4e-0e4ffb4647bd"
@@ -52,8 +54,8 @@
           },
           {
             "position": {
-              "x": 292.9999999999999,
-              "y": 60.00000000000068
+              "x": 282.9999999999999,
+              "y": 45.000000000000284
             },
             "size": {
               "width": 360,
@@ -66,8 +68,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "7c744fb6-c639-4a00-875b-e1c74599ecca",
             "zIndex": -1,
+            "id": "7c744fb6-c639-4a00-875b-e1c74599ecca",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Home LAN(trusted)\n",
@@ -76,7 +78,8 @@
               "hasOpenThreats": false,
               "crossingFlows": [
                 "b0488f72-a550-430c-ab40-f92f5ab086d8",
-                "cb9d477d-b3a8-4de5-8677-00b3c4383911"
+                "cb9d477d-b3a8-4de5-8677-00b3c4383911",
+                "7730934d-b79e-467c-af8f-fcda8af07014"
               ],
               "containedElements": [
                 "02b787b6-1346-4605-b88d-2c0ec9381040",
@@ -87,8 +90,8 @@
           },
           {
             "position": {
-              "x": 39.999999999999574,
-              "y": 90
+              "x": 21.249999999999574,
+              "y": 80
             },
             "size": {
               "width": 112.5,
@@ -106,6 +109,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -189,7 +193,6 @@
               ]
             },
             "id": "1ab92f1f-a8ae-40ca-9bf8-927f862fc878",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Client\n",
@@ -226,6 +229,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -309,7 +313,6 @@
               ]
             },
             "id": "df3352fa-10ee-46c9-ba4e-0e4ffb4647bd",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Attacker\n",
@@ -343,6 +346,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -426,7 +430,6 @@
               ]
             },
             "id": "7d830ece-b816-4636-93a8-7dcd4c2a1139",
-            "zIndex": 5,
             "data": {
               "type": "tm.Actor",
               "name": "Internet",
@@ -450,7 +453,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Router Co"
+                "text": "Router Config"
               },
               "topLine": {
                 "strokeWidth": 1.5,
@@ -463,6 +466,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 6,
             "ports": {
               "groups": {
                 "top": {
@@ -546,7 +550,6 @@
               ]
             },
             "id": "02b787b6-1346-4605-b88d-2c0ec9381040",
-            "zIndex": 6,
             "data": {
               "type": "tm.Store",
               "name": "Router Config",
@@ -704,52 +707,6 @@
             }
           },
           {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Data Flow"
-            ],
-            "id": "7730934d-b79e-467c-af8f-fcda8af07014",
-            "source": {
-              "x": 101,
-              "y": 90
-            },
-            "target": {
-              "x": 201,
-              "y": 190
-            }
-          },
-          {
             "position": {
               "x": 330,
               "y": 80
@@ -770,6 +727,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -853,7 +811,6 @@
               ]
             },
             "id": "43d7bac0-67b2-4214-99ed-5cef7b53b1cd",
-            "zIndex": 11,
             "data": {
               "type": "tm.Process",
               "name": "Wi-Fi\n",
@@ -893,6 +850,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -976,7 +934,6 @@
               ]
             },
             "id": "cb41d61d-2f20-41b4-ac43-f03cc24ad967",
-            "zIndex": 12,
             "data": {
               "type": "tm.Process",
               "name": "Router/AP",
@@ -1038,6 +995,155 @@
             "target": {
               "cell": "02b787b6-1346-4605-b88d-2c0ec9381040",
               "port": "9b3d5f79-9289-4850-9c99-6659d9cf9d33"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 14,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "b59c9918-e7a2-4487-bf5a-da7aef465e79",
+                "7c744fb6-c639-4a00-875b-e1c74599ecca"
+              ]
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "7730934d-b79e-467c-af8f-fcda8af07014",
+            "source": {
+              "cell": "1ab92f1f-a8ae-40ca-9bf8-927f862fc878",
+              "port": "cd422b76-0422-4932-8d5b-42d30f11e7aa"
+            },
+            "target": {
+              "cell": "43d7bac0-67b2-4214-99ed-5cef7b53b1cd",
+              "port": "48a73480-353f-4900-a0c7-f8e335bdd33a"
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
             }
           }
         ]
